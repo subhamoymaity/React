@@ -16,11 +16,11 @@ const FoodItems = ({ items }) => {
           key={item}
           foodItem={item}
           bought={activeItems.includes(item)} //bought = true
-          handleBuyButton={(event) => onBuyButton(item, event)}
+          handleBuyButton={(event) => onBuyButton(item, event)}   //wrapper method or anonymous function
         ></Item>
       ))}
     </ul>
   );
-};
+};Ṅ
 
 export default FoodItems;
